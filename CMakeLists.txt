@@ -14,7 +14,7 @@ set(CMAKE_C_COMPILER "clang")
 # add_subdirectory(include)
 
 # Add the executable
-add_executable(clox src/main.c src/memory.c src/chunk.c src/debug.c src/value.c src/vm.c src/compiler.c src/scanner.c src/object.c)
+add_executable(clox src/main.c src/memory.c src/chunk.c src/debug.c src/value.c src/vm.c src/compiler.c src/scanner.c src/object.c src/table.c)
 
 # Specify include directories
 target_include_directories(clox PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
