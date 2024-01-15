@@ -20,7 +20,7 @@ add_executable(clox src/main.c src/memory.c src/chunk.c src/debug.c src/value.c 
 target_include_directories(clox PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 # Optionally, set Clang-specific compiler flags
-target_compile_options(clox PRIVATE -Wall)
+target_compile_options(clox PRIVATE -Wall -Wno-incompatible-pointer-types)
 #target_compile_options(clox PRIVATE -Wall -Werror -Weverything)
 
 # Generate compile_commands.json
